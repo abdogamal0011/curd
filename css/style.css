@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body
+{
+    background: #222;
+    color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container 
+{
+margin: auto;
+    width: 80%;
+}
+.header
+{
+    text-align: center;
+    color: #fff;
+}
+.header p
+{
+margin: 2px 0 ;
+}
+input
+{
+    width: 100%;
+    border: none;
+    background: #111;
+    height: 30px;
+    outline: none;
+    margin: 4px 0 ;
+    border-radius: 4px ;
+    padding: 4px;
+    color: #fff;
+}
+
+
+.prodact input
+{
+    width: 20%;
+    padding: 4px;
+}
+.prodact #total
+{
+    background: #a00d02;
+    padding: 4px 2px;
+    border-radius: 4px;
+}
+#total::before
+{
+    content: 'total: ';
+}
+input:focus
+{
+    background: #000;
+    transform: scale(1.1);
+}
+button
+{
+    width: 100%;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    background: #310044;
+    color: #fff;
+    border-radius: 20px;
+    transition: .05s;
+}
+button:hover{
+    background: #51025f;
+    letter-spacing: 1px;
+}
+.btnsearch{
+    display: flex;
+    justify-content: space-between;
+}
+.btnsearch button
+{
+    width: 45%;
+}
+table
+{
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+table th
+{
+    text-transform: uppercase;
+}
+th , td
+{
+    padding: 5px;
+}
+#deleteAll
+{
+    margin: 20px 0 ;
+}

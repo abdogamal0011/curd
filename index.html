@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Abdo gamal</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>CRUDS</h2>
+            <p>CREATE READ UPDATE DELETE SEARCH</p>
+        </div>
+        <div class="input">
+<input type="text" placeholder="tittle" id="tittle">
+<div class="prodact">
+    <input onkeyup="getTotle()" type="number"  placeholder="price" id="price">
+    <input onkeyup="getTotle()"type="number"  placeholder="taxes" id="taxes">
+    <input onkeyup="getTotle()"type="number" id="ads"  placeholder="ads">
+    <input onkeyup="getTotle()"type="number" id="discount"  placeholder="discount">
+<small id="total" ></small >
+</div>       
+
+<input type="number" placeholder="count" id="count">
+<input type="text" id="categary" placeholder="categary">
+<button id="submit">CREATE</button>
+</div>
+
+<div class="outputs">
+    <div class="searchBlock">
+     <input type="text"  onkeyup="searchData(this.value)" placeholder="search" id="search">
+
+        <div class="btnsearch">
+    <button onclick="getSearchMood(this.id)"  id="searchTitle"> search By title</button>
+    <button onclick="getSearchMood(this.id)" id="searchCategory"> search By category</button>
+
+</div>
+
+    </div>
+</div>
+<div id="deleteAll"></div>
+
+<table>
+
+    <tr>
+        <th>id</th>
+        <th>title</th>
+        <th>price</th>
+        <th>taxes</th>
+        <th>ads</th>
+        <th>discount</th>
+        <th>total</th>
+        <th>category</th>
+        <th>update</th>
+        <th>delete</th>
+    </tr>
+    <tbody id="tbody">
+ 
+        
+    </tbody>
+ </table>
+     </div>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
